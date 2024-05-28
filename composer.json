@@ -1,6 +1,6 @@
 {
     "name": "tobya/tailwind-trumpet",
-    "description": "This is my package tailwind-trumpet",
+    "description": "A Package to trumpet or expose Tailwind css classes that are set in code.",
     "keywords": [
         "Tobya",
         "laravel",
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },

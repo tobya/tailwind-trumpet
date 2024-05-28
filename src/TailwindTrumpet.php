@@ -60,4 +60,9 @@ class TailwindTrumpet
         $filestore->put('/tailwindclasses.blade.php', collect($tailwindClasses)->map(fn ($tw) => "<span class='$tw'>$tw</span>")->join("\n"));
     }
 
+    public function  trumpetTailwindClasses()
+    {
+        return 'bg-sky-200';
+    }
+
 }
