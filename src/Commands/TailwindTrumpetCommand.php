@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Tobya\TailwindTrumpet\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TailwindTrumpetCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'tailwind-trumpet';
 
     public $description = 'My command';
 
