@@ -15,6 +15,7 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
+        ray('about to run package');
         $package
             ->name('tailwind-trumpet')
             ->hasConfigFile('trumpet')
@@ -23,8 +24,9 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
             ->hasCommand(TailwindTrumpetCommand::class);
     }
 
-    public function boot()
+    public function dopnotboot()
     {
+        ray('boot package');
         $this->app->singleton(\Tobya\TailwindTrumpet\TailwindTrumpet::class, function () {
             return new \Tobya\TailwindTrumpet\TailwindTrumpet();
         });
