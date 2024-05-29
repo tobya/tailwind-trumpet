@@ -23,7 +23,7 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
             ->hasCommand(TailwindTrumpetCommand::class);
     }
 
-        public function boot()
+    public function boot()
     {
         $this->app->singleton(\Tobya\TailwindTrumpet\TailwindTrumpet::class, function () {
             return new \Tobya\TailwindTrumpet\TailwindTrumpet();
@@ -31,8 +31,8 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
 
         $this->app->singleton(TailwindTrumpet::class);
 
-          $this->publishes([
-             __DIR__.'/../config/trumpet.php' => config_path('trumpet.php'),
+        $this->publishes([
+            __DIR__.'/../config/trumpet.php' => config_path('trumpet.php'),
         ]);
 
               if ($this->app->runningInConsole()) {
