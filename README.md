@@ -29,24 +29,23 @@ You can publish the config file with:
 php artisan vendor:publish --tag="tailwind-trumpet-config"
 ```
 
-This is the contents of the published config file:
+    | A list of  classes here that will return a list of classes that need to be exposed.
+    | classes must have a function trumpetTailwindClasses() that returns a String or array of Strings 
+
+`config\trumpet.php`
 
 ```php
 return [
+        \App\Services\CourseTypeLookupService::class,
 ];
 ```
 
-Optionally, you can publish the views using
 
-```bash
-php artisan vendor:publish --tag="tailwind-trumpet-views"
-```
 
 ## Usage
 
 ```php
-$tailwindTrumpet = new Tobya\TailwindTrumpet();
-echo $tailwindTrumpet->echoPhrase('Hello, Tobya!');
+ > php artisan trumpet:expose
 ```
 
 ## Testing
