@@ -23,6 +23,4 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
          //   ->hasMigration('create_tailwind-trumpet_table')
             ->hasCommand(TailwindTrumpetCommand::class);
     }
-
-
 }

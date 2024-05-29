@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -17,6 +16,5 @@ return [
 
         //\Tobya\TailwindTrumpet\TailwindTrumpet::class,
     ],
-
 
 ];

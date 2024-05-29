@@ -61,6 +61,7 @@ class TailwindTrumpet
 
     /**
      * A test function
+     *
      * @return string
      */
     public function trumpetTailwindClasses()
