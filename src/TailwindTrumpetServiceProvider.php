@@ -19,7 +19,7 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
         $package
             ->name('tailwind-trumpet')
             ->hasConfigFile('trumpet')
-            ->hasViews()
+           // ->hasViews()
          //   ->hasMigration('create_tailwind-trumpet_table')
             ->hasCommand(TailwindTrumpetCommand::class);
     }

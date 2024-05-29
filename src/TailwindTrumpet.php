@@ -38,7 +38,7 @@ class TailwindTrumpet
 
                 $GeneratedClasses = $obj->{static::cssRetrievalMethod}();
                 if (is_array($GeneratedClasses)) {
-                    $tailwindClasses[] = implode(' ', $GeneratedClasses);
+                    $tailwindClasses = collect($tailwindClasses)->merge(collect($GeneratedClasses)->values());
                 } elseif (is_null($GeneratedClasses)) {
                     // do nothing.
                 } else {
