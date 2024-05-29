@@ -36,10 +36,10 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
         ]);
 
               if ($this->app->runningInConsole()) {
-        $this->commands([
-            TailwindTrumpetCommand::class,
+                $this->commands([
+                    TailwindTrumpetCommand::class,
 
-        ]);
-    }
+                ]);
+             }
     }
 }
