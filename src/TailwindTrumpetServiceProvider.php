@@ -35,11 +35,11 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
             __DIR__.'/../config/trumpet.php' => config_path('trumpet.php'),
         ]);
 
-              if ($this->app->runningInConsole()) {
-                $this->commands([
-                    TailwindTrumpetCommand::class,
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                TailwindTrumpetCommand::class,
 
-                ]);
-             }
+            ]);
+        }
     }
 }
