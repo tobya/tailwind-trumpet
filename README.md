@@ -20,23 +20,18 @@ You can install the package via composer:
 composer require tobya/tailwind-trumpet
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="tailwind-trumpet-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="tailwind-trumpet-config"
 ```
 
-    | A list of  classes here that will return a list of classes that need to be exposed.
-    | classes must have a function trumpetTailwindClasses() that returns a String or array of Strings 
+This will output the following file.
 
 `config\trumpet.php`
+
+    | A list of  classes here that will return a list of classes that need to be exposed.
+    | classes must have a function trumpetTailwindClasses() that returns a String or array of Strings 
 
 ```php
 return [
