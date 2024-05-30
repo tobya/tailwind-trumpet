@@ -7,6 +7,10 @@
 
 Tailwind Trumpet, Trumpets(!) your hidden tailwind classes.  Expose those hidden css classes used in your php objects so they will always be available in your blades
 
+Sometimes you might find that you have a set of colors or other styles that you assign in your php code eg you have a list of courses of specific type and you want each type to be the same tailwind color when displayed on your front end, but because tailwind compiles away unused classes and does not scan php code, you need to move this code to the front end usually.
+
+Tailwind Trumpet solves this problem by allowing you to register any tailwind classes you php code uses and then these are published to your `views` directory so that tailwinds build process will find them.
+
 
 ## Installation
 
