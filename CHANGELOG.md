@@ -2,6 +2,10 @@
 
 All notable changes to `tailwind-trumpet` will be documented in this file.
 
+## v0.4 - 2024-05-29
+
+updates
+
 ## v0.3 - 2024-05-29
 
 Arrays should provide individual items in output.
