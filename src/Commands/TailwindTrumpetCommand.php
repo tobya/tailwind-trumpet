@@ -13,7 +13,7 @@ class TailwindTrumpetCommand extends Command
 
     public function handle(): int
     {
-        (new TailwindTrumpet())->generate();
+        (new TailwindTrumpet)->generate();
         $this->comment('All done');
 
         return self::SUCCESS;
