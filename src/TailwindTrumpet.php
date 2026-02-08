@@ -44,7 +44,7 @@ class TailwindTrumpet
                 } else {
                     $tailwindClasses[] = $GeneratedClasses;
                 }
-                ray($tailwindClasses);
+
             } else {
                 throw new \BadFunctionCallException('method '.static::cssRetrievalMethod.'() not found on '.$class);
             }
