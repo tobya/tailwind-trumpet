@@ -14,7 +14,7 @@ return [
 
     'register' => [
 
-        //\Tobya\TailwindTrumpet\TailwindTrumpet::class,
+        // \Tobya\TailwindTrumpet\TailwindTrumpet::class,
     ],
 
 ];
