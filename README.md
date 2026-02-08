@@ -28,7 +28,7 @@ php artisan vendor:publish --tag="tailwind-trumpet-config"
 
 This will output the following file.
 
-`config\trumpet.php`
+`config/trumpet.php`
 
     | A list of  classes here that will return a list of classes that need to be exposed.
     | classes must have a function trumpetTailwindClasses() that returns a String or array of Strings 
@@ -42,6 +42,22 @@ return [
 
 
 ## Usage
+
+#### Implementation
+
+For any class that you list in the class list in `config/trumpet.php` ensure that it implements a method called `trumpetTailwindClasses()`.  This method takes no parameters and returns an array of strings.  These strings are the tailwind classes you wish to include.
+
+```php
+    public function trumpetTailwindClasses(){
+        return [
+                 'bg-red-700 text-white',
+                 'bg-green-700 text-white',
+               ];
+    }
+`````
+
+
+Then run the artisan command to generate the blade file with tailwind classes included.  You can add this to your git repo.
 
 ```php
  > php artisan trumpet:expose
