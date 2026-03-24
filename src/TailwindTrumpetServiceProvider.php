@@ -2,6 +2,7 @@
 
 namespace Tobya\TailwindTrumpet;
 
+use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Tobya\TailwindTrumpet\Commands\TailwindTrumpetCommand;
@@ -22,5 +23,12 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
            // ->hasViews()
          //   ->hasMigration('create_tailwind-trumpet_table')
             ->hasCommand(TailwindTrumpetCommand::class);
+    }
+
+    public function boot()
+    {
+        Blade::directive('tailwind',function ($value){
+                return  config('trumpet.aliases.' . $value, ' ');
+        });
     }
 }

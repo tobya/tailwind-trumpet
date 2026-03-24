@@ -49,6 +49,11 @@ class TailwindTrumpet
                 throw new \BadFunctionCallException('method '.static::cssRetrievalMethod.'() not found on '.$class);
             }
         }
+
+        // load aliases
+        $tailwindClasses = collect($tailwindClasses)->merge(collect(config('trumpet.aliases'))->values());
+
+
         $filestore = Storage::build([
             'driver' => 'local',
             'root' => base_path('/resources/views/tailwind-trumpet'),
@@ -56,7 +61,7 @@ class TailwindTrumpet
 
         ]);
 
-        $filestore->put('/tailwindclasses.blade.php', collect($tailwindClasses)->map(fn ($tw) => "<span class='$tw'>$tw</span>")->join("\n"));
+        $filestore->put('/tailwindclasses.blade.php', collect($tailwindClasses)->map(fn ( $tw) => "<span class='$tw'>$tw </span>")->join("\n"));
     }
 
     /**

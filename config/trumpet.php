@@ -17,4 +17,8 @@ return [
         //\Tobya\TailwindTrumpet\TailwindTrumpet::class,
     ],
 
+    'aliases' => [
+      // 'confirmed' => 'bg-red-300 text-white',
+    ],
+
 ];
