@@ -34,7 +34,7 @@ This will output the following file.
     | classes must have a function trumpetTailwindClasses() that returns a String or array of Strings 
 
 ```php
-return [
+'register' =>  [
         \App\Services\CourseTypeLookupService::class,
 ];
 ```
