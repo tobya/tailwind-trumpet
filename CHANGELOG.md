@@ -2,6 +2,17 @@
 
 All notable changes to `tailwind-trumpet` will be documented in this file.
 
+## v0.7 - 2026-11-26
+
+### What's Changed
+
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/12
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.0.0 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/13
+* Bump dependabot/fetch-metadata from 3.0.0 to 3.1.0 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/14
+* Added comment at top of generated class file.
+
+**Full Changelog**: https://github.com/tobya/tailwind-trumpet/compare/v0.6...v0.7
+
 ## v0.6 - 2026-02-08
 
 ### What's Changed
