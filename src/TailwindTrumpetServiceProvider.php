@@ -27,8 +27,8 @@ class TailwindTrumpetServiceProvider extends PackageServiceProvider
 
     public function boot()
     {
-        Blade::directive('tailwind',function ($value){
-                return  config('trumpet.aliases.' . $value, ' ');
+        Blade::directive('tailwind', function ($value) {
+            return config('trumpet.aliases.'.$value, ' ');
         });
     }
 }

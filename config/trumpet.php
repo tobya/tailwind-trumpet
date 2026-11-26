@@ -18,7 +18,7 @@ return [
     ],
 
     'aliases' => [
-      // 'confirmed' => 'bg-red-300 text-white',
+        // 'confirmed' => 'bg-red-300 text-white',
     ],
 
 ];
