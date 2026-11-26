@@ -61,7 +61,9 @@ class TailwindTrumpet
 
         ]);
 
-        $filestore->put('/tailwindclasses.blade.php', collect($tailwindClasses)->map(fn ( $tw) => "<span class='$tw'>$tw </span>")->join("\n"));
+
+        $header = '<!-- This file is generated automatically by tobya/tailwind-trumpet package. All changes you make will be overwritten. Do not edit.  -->' . "\n";
+        $filestore->put('/tailwindclasses.blade.php', $header . collect($tailwindClasses)->map(fn ($tw) => "<span class='$tw'>$tw</span>")->join("\n"));
     }
 
     /**
