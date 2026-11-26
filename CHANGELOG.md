@@ -2,6 +2,18 @@
 
 All notable changes to `tailwind-trumpet` will be documented in this file.
 
+## v0.6 - 2026-02-08
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/4
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/6
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/7
+* Bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/8
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/tobya/tailwind-trumpet/pull/11
+
+**Full Changelog**: https://github.com/tobya/tailwind-trumpet/compare/v0.5...v0.6
+
 ## v0.5 - 2025-03-24
 
 ### What's Changed
